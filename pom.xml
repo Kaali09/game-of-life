@@ -25,10 +25,10 @@
         <id>dev-azure-com-kaliraja1992-mvn_artifacts</id>
         <url>https://pkgs.dev.azure.com/kaliraja1992/_packaging/mvn_artifacts/maven/v1</url>
         <releases>
-        <enabled>true</enabled>
+           <enabled>true</enabled>
         </releases>
         <snapshots>
-        <enabled>true</enabled>
+           <enabled>true</enabled>
         </snapshots>
     </repository>
     
