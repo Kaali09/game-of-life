@@ -20,7 +20,18 @@
         <jelastic.context>gameoflife</jelastic.context>
         <jelastic.environment>wakaleo</jelastic.environment>
     </properties>
-
+    
+    <repository>
+        <id>dev-azure-com-kaliraja1992-mvn_artifacts</id>
+        <url>https://pkgs.dev.azure.com/kaliraja1992/_packaging/mvn_artifacts/maven/v1</url>
+        <releases>
+        <enabled>true</enabled>
+        </releases>
+        <snapshots>
+        <enabled>true</enabled>
+        </snapshots>
+    </repository>
+    
     <scm>
         <connection>scm:git:git@github.com:${github.account}/game-of-life.git</connection>
         <developerConnection>scm:git:git@github.com:${github.account}/game-of-life.git</developerConnection>
@@ -490,16 +501,6 @@
                         <groupId>org.apache.maven.plugins</groupId>
                         <artifactId>maven-jxr-plugin</artifactId>
                         <version>2.1</version>
-                        <repository>
-<id>dev-azure-com-kaliraja1992-mvn_artifacts</id>
-<url>https://pkgs.dev.azure.com/kaliraja1992/_packaging/mvn_artifacts/maven/v1</url>
-<releases>
-<enabled>true</enabled>
-</releases>
-<snapshots>
-<enabled>true</enabled>
-</snapshots>
-</repository>
                     </plugin>
                 </plugins>
             </reporting>
